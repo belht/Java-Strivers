@@ -4,7 +4,7 @@ import org.openqa.selenium.interactions.Actions;
 import java.time.Duration;
 
 public class DragandDrop {
-        public static void main(String args[]) throws InterruptedException {
+        public static void main(String[] args) throws InterruptedException {
             System.setProperty("webdriver.chrome.driver", "D:\\IDE_tools\\chromedriver.exe");
             ChromeDriver driver = new ChromeDriver();
 
@@ -16,8 +16,6 @@ public class DragandDrop {
 
             Actions actions = new Actions(driver);
 
-            //    WebElement elements = (new WebDriverWait(driver, Duration.ofSeconds(10))
-            //            .until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@title='Search']"))));
             actions.dragAndDrop(elem, elem2).build().perform();
             Thread.sleep(1500);
             driver.navigate().refresh();
