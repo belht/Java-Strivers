@@ -3,7 +3,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import java.time.Duration;
 
-public class DragandDrop {
+public class DragAndDrop {
         public static void main(String[] args) throws InterruptedException {
             System.setProperty("webdriver.chrome.driver", "D:\\IDE_tools\\chromedriver.exe");
             ChromeDriver driver = new ChromeDriver();
